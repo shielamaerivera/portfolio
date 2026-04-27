@@ -636,6 +636,59 @@ img {
   font-size: 12px;
 }
 
+/* RESUME */
+.resume-section { padding: var(--section) 0; border-bottom: 1px solid var(--line); }
+.resume-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; gap: 52px; align-items: start; }
+.resume-frame-wrap {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgba(36,33,29,0.07);
+}
+.resume-topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 18px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+}
+.resume-topbar-dots { display: flex; gap: 6px; }
+.resume-topbar-dots span { width: 10px; height: 10px; border-radius: 50%; background: var(--faint); display: block; }
+.resume-topbar-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.resume-frame { display: block; width: 100%; height: 700px; border: none; }
+.resume-sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 90px; }
+.resume-btn-primary {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  background: var(--text); color: var(--surface);
+  padding: 15px 22px; border-radius: 999px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  transition: opacity .18s;
+}
+.resume-btn-primary:hover { opacity: .82; }
+.resume-btn-secondary {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  border: 1px solid var(--line-2); color: var(--text);
+  padding: 15px 22px; border-radius: 999px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  transition: all .18s;
+}
+.resume-btn-secondary:hover { background: var(--surface); border-color: var(--text); }
+.resume-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 20px; padding: 22px;
+}
+.resume-card h4 { font-size: 13px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 14px; }
+.resume-card ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.resume-card ul li { display: flex; gap: 9px; font-size: 13px; color: var(--text-2); line-height: 1.45; }
+.resume-card ul li::before { content: "→"; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+@media (max-width: 900px) {
+  .resume-layout { grid-template-columns: 1fr; }
+  .resume-sidebar { position: static; flex-direction: row; flex-wrap: wrap; }
+  .resume-btn-primary, .resume-btn-secondary { flex: 1 1 auto; }
+  .resume-card { width: 100%; }
+  .resume-frame { height: 500px; }
+}
+
 /* CONTACT */
 .contact {
   background: var(--text);
@@ -1039,6 +1092,7 @@ img {
       <a href="#work">Work</a>
       <a href="#strategy">Strategy</a>
       <a href="#experience">Experience</a>
+      <a href="#resume">Resume</a>
       <a href="#contact" class="nav-button">Contact</a>
     </div>
   </div>
@@ -1817,6 +1871,70 @@ img {
   </section>
 
 </main>
+
+<!-- RESUME SECTION -->
+<section class="resume-section" id="resume">
+  <div class="container">
+    <div class="kicker">Resume</div>
+    <h2 class="section-title">View or download my full resume.</h2>
+    <p class="section-lede" style="margin-bottom:48px;">9+ years of specialized Amazon marketplace creative strategy — available for senior remote roles, agency partnerships, and project-based engagements.</p>
+
+    <div class="resume-layout">
+
+      <!-- Embedded viewer -->
+      <div class="resume-frame-wrap">
+        <div class="resume-topbar">
+          <div class="resume-topbar-dots"><span></span><span></span><span></span></div>
+          <div class="resume-topbar-label">Shiela Mae Rivera · 2026 Resume</div>
+          <div style="width:54px"></div>
+        </div>
+        <iframe
+          class="resume-frame"
+          src="Shiela_Mae_Rivera_2026_Resume.pdf"
+          title="Shiela Mae Rivera 2026 Resume"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="resume-sidebar">
+
+        <a class="resume-btn-primary" href="Shiela_Mae_Rivera_2026_Resume.pdf" download="Shiela_Mae_Rivera_2026_Resume.pdf">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+
+        <a class="resume-btn-secondary" href="Shiela_Mae_Rivera_2026_Resume.pdf" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Open Full Screen
+        </a>
+
+        <div class="resume-card">
+          <h4>At a Glance</h4>
+          <ul>
+            <li>9+ years Amazon creative strategy — Seller &amp; Vendor Central</li>
+            <li>200+ brands across agencies, distributors &amp; scaling DTC</li>
+            <li>30–50% sales lift for Shark Tank-featured brands</li>
+            <li>Led Premium A+, Storefronts, Image Galleries &amp; Brand Story</li>
+            <li>Managed international teams of 20+ designers</li>
+            <li>15+ years global product development &amp; fashion background</li>
+          </ul>
+        </div>
+
+        <div class="resume-card">
+          <h4>Open To</h4>
+          <ul>
+            <li>Senior remote Amazon creative roles</li>
+            <li>Agency &amp; brand partnerships</li>
+            <li>Contract &amp; project-based work</li>
+            <li>Multi-ASIN catalog systems</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="contact" id="contact">
   <div class="container">
