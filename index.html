@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Shiela Mae Rivera — Amazon Growth Creative Strategist and Marketplace Content Lead specializing in Premium A+, image galleries, storefront architecture, SEO-aligned messaging, multi-ASIN systems, and conversion-focused Amazon creative operations." />
-<title>Shiela Mae Rivera — Amazon Growth Creative Strategist</title>
+<meta name="description" content="Amazon content designer specializing in listing images, Premium A+ content, Brand Story, Storefronts, and marketplace creative strategy for Amazon brands and agencies." />
+<title>Shiela Mae Rivera | Senior Amazon Content Designer &amp; Marketplace Creative Strategist</title>
 <style>
 :root {
   --cream: #f7f3eb;
@@ -1025,6 +1025,361 @@ img {
   .tip-sep { display: none; }
 }
 
+
+/* ── NEW SECTIONS CSS ───────────────────────────────────────────── */
+
+/* PROOF BAR */
+.proof-bar {
+  background: var(--text);
+  padding: 0;
+  border-bottom: 1px solid rgba(255,253,248,.1);
+}
+.proof-bar-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.proof-bar-item {
+  padding: 20px 22px;
+  border-right: 1px solid rgba(255,253,248,.08);
+}
+.proof-bar-item:last-child { border-right: 0; }
+.proof-bar-num {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fffdf8;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+.proof-bar-label {
+  font-size: 11px;
+  color: rgba(255,253,248,.48);
+  letter-spacing: 0.02em;
+}
+
+/* AUDIENCE CARDS */
+.audience-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.audience-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 38px;
+}
+.audience-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(146,115,72,.1);
+  border: 1px solid rgba(146,115,72,.2);
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+}
+.audience-card h3 {
+  font-size: clamp(20px,2.2vw,26px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.audience-card p {
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+/* IMPROVE GRID */
+.improve-grid {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.improve-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.improve-item:nth-child(2n) { border-right: 0; }
+.improve-item:nth-last-child(-n+2) { border-bottom: 0; }
+.improve-dot {
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+/* TESTIMONIALS */
+.testimonial-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+.testimonial-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.testimonial-company {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.testimonial-contact {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+.testimonial-label {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(146,115,72,.1);
+  border: 1px solid rgba(146,115,72,.18);
+  border-radius: 999px;
+  padding: 4px 10px;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+.testimonial-label.direct {
+  color: #4a7c59;
+  background: rgba(74,124,89,.09);
+  border-color: rgba(74,124,89,.22);
+}
+.testimonial-text {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.68;
+  flex: 1;
+  margin-top: 4px;
+}
+.testimonial-note {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 680px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+/* SERVICES */
+.services-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.service-card {
+  padding: 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.service-card:nth-child(4n) { border-right: 0; }
+.service-card:nth-last-child(-n+4) { border-bottom: 0; }
+.service-num {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.service-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+.service-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* WHY WORK WITH ME */
+.why-grid {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+.why-callout {
+  background: var(--text);
+  color: var(--surface);
+  border-radius: 28px;
+  padding: 36px;
+}
+.why-callout h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.why-callout p {
+  color: rgba(255,253,248,.72);
+  font-size: 15px;
+  line-height: 1.72;
+  margin-bottom: 22px;
+}
+.why-closing {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gold-2);
+  line-height: 1.4;
+  border-top: 1px solid rgba(255,253,248,.14);
+  padding-top: 20px;
+}
+.capabilities-list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.cap-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--text-2);
+}
+.cap-item:nth-child(2n) { border-right: 0; }
+.cap-item:nth-last-child(-n+2) { border-bottom: 0; }
+.cap-dot {
+  width: 5px; height: 5px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* RESUME SECTION */
+.resume-section {
+  padding: var(--section) 0;
+  border-bottom: 1px solid var(--line);
+}
+.resume-grid {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.resume-snapshot {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 32px;
+}
+.resume-snapshot h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+.resume-fact {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.resume-fact:last-of-type { border-bottom: 0; }
+.resume-fact strong {
+  color: var(--text);
+  white-space: nowrap;
+  min-width: 72px;
+  font-size: 14px;
+}
+.best-fit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.fit-tag {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 13px;
+  color: var(--text-2);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--surface);
+}
+
+/* RESPONSIVE — NEW SECTIONS */
+@media (max-width: 1024px) {
+  .proof-bar-inner { grid-template-columns: repeat(3,1fr); }
+  .proof-bar-item:nth-child(3) { border-right: 0; }
+  .proof-bar-item:nth-child(-n+3) { border-bottom: 1px solid rgba(255,253,248,.08); }
+  .services-grid { grid-template-columns: repeat(2,1fr); }
+  .service-card:nth-child(4n) { border-right: 1px solid var(--line); }
+  .service-card:nth-child(2n) { border-right: 0; }
+  .service-card:nth-last-child(-n+4) { border-bottom: 1px solid var(--line); }
+  .service-card:nth-last-child(-n+2) { border-bottom: 0; }
+}
+@media (max-width: 768px) {
+  .audience-grid, .resume-grid, .why-grid { grid-template-columns: 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .improve-grid { grid-template-columns: 1fr; }
+  .improve-item { border-right: 0 !important; }
+  .improve-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .improve-item:last-child { border-bottom: 0; }
+  .capabilities-list { grid-template-columns: 1fr; }
+  .cap-item { border-right: 0; }
+  .cap-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .cap-item:last-child { border-bottom: 0; }
+}
+@media (max-width: 720px) {
+  .proof-bar-inner { grid-template-columns: 1fr 1fr; }
+  .proof-bar-item:nth-child(2n) { border-right: 0; }
+  .proof-bar-item { border-bottom: 1px solid rgba(255,253,248,.08); }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { border-right: 0 !important; }
+  .service-card:nth-last-child(-n+2) { border-bottom: 1px solid var(--line) !important; }
+  .service-card:last-child { border-bottom: 0 !important; }
+}
+
 </style>
 </head>
 <body>
@@ -1033,13 +1388,13 @@ img {
   <div class="nav-inner">
     <a href="#top" class="brand-lockup" aria-label="Shiela Mae Rivera home">
       <span class="brand-name">Shiela Mae Rivera</span>
-      <span class="brand-role">Amazon Growth Creative Strategist</span>
+      <span class="brand-role">Senior Amazon Content Designer &amp; Marketplace Creative Strategist</span>
     </a>
     <div class="nav-links">
       <a href="#work">Work</a>
-      <a href="#strategy">Strategy</a>
-      <a href="#experience">Experience</a>
-      <a href="Shiela_Mae_Rivera_2026_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#services">Services</a>
+      <a href="#resume">Resume</a>
       <a href="#contact" class="nav-button">Contact</a>
     </div>
   </div>
@@ -1049,15 +1404,15 @@ img {
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="hero-kicker">Amazon Marketplace Content Lead · Creative Operations</div>
-        <h1 class="hero-title">Amazon Content Systems Built for Conversion</h1>
-        <p class="hero-subtitle">Senior Amazon Growth Creative Strategist specializing in Premium A+, image gallery systems, storefront architecture, SEO-aligned messaging, and scalable multi-ASIN content for growth-focused ecommerce brands.</p>
-        <p class="hero-positioning">I help Amazon brands translate complex products, crowded catalogs, and fragmented messaging into conversion-focused visual systems designed for modern marketplace behavior.</p>
+        <div class="hero-kicker">Senior Amazon Content Designer · Marketplace Creative Strategist</div>
+        <h1 class="hero-title">Senior Amazon Content Designer &amp; Marketplace Creative Strategist</h1>
+        <p class="hero-subtitle">I create conversion-focused Amazon listing images, Premium A+ content, Brand Stories, and Storefronts for growing Amazon brands and marketplace agencies.</p>
+        <p class="hero-positioning">With 9+ years of Amazon marketplace experience and work across 200+ brands, I combine hands-on design, shopper psychology, SEO-aware messaging, copy direction, and creative operations to improve how products are presented, understood, and trusted on Amazon.</p>
         <div class="btn-row">
-          <a class="btn btn-dark" href="#work">View Selected Work</a>
-          <a class="btn btn-outline" href="Shiela_Mae_Rivera_2026_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-          <a class="btn btn-outline" href="mailto:shieladesigns@gmail.com">Contact</a>
+          <a class="btn btn-dark" href="#work">View Portfolio Work</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
         </div>
+        <p style="margin-top:18px;font-size:13px;color:var(--muted);">Hiring for an Amazon content role? <a href="#resume" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px;">View my resume.</a></p>
       </div>
 
       <aside class="hero-card" aria-label="Professional proof points">
@@ -1098,7 +1453,76 @@ img {
   </div>
 </header>
 
+<!-- PROOF BAR -->
+<div class="proof-bar" aria-label="Key proof points">
+  <div class="proof-bar-inner">
+    <div class="proof-bar-item">
+      <div class="proof-bar-num">9+ Years</div>
+      <div class="proof-bar-label">Amazon Experience</div>
+    </div>
+    <div class="proof-bar-item">
+      <div class="proof-bar-num">200+ Brands</div>
+      <div class="proof-bar-label">Supported</div>
+    </div>
+    <div class="proof-bar-item">
+      <div class="proof-bar-num">Premium A+ · Brand Story · Storefronts</div>
+      <div class="proof-bar-label">Core Deliverables</div>
+    </div>
+    <div class="proof-bar-item">
+      <div class="proof-bar-num">SC + VC</div>
+      <div class="proof-bar-label">Seller Central + Vendor Central</div>
+    </div>
+    <div class="proof-bar-item">
+      <div class="proof-bar-num">Agency + Brand</div>
+      <div class="proof-bar-label">Private Label Experience</div>
+    </div>
+  </div>
+</div>
+
 <main>
+
+
+  <!-- WHO I WORK WITH -->
+  <section class="section" id="audience">
+    <div class="container">
+      <div class="kicker">Who I Work With</div>
+      <h2 class="section-title">Amazon agencies and private-label brands.</h2>
+      <p class="section-lede">I support two types of clients: agency teams that need a senior Amazon content designer who understands production workflows, and brands that need stronger product presentation on Amazon.</p>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-pill">For Agencies</div>
+          <h3>Amazon &amp; eCommerce Agencies</h3>
+          <p>Need a senior Amazon content designer who understands agency workflows, Amazon content systems, catalog updates, creative reviews, Seller Central/Vendor Central, and fast-moving production? I support image galleries, Premium A+ content, Brand Stories, Storefronts, catalog refreshes, and cross-functional collaboration with account, PPC, SEO, copy, and creative teams.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-pill">For Brands</div>
+          <h3>Amazon Brands &amp; Private Labels</h3>
+          <p>Need stronger Amazon listing visuals, Premium A+ content, or Storefronts that make your products easier to understand and trust? I help brands improve weak or outdated Amazon content through clearer image flow, stronger visual hierarchy, better product education, and more premium brand presentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I HELP IMPROVE -->
+  <section class="section" id="improve">
+    <div class="container">
+      <div class="kicker">What I Help Improve</div>
+      <h2 class="section-title">Strong products. Weak Amazon content. That's where I come in.</h2>
+      <p class="section-lede">I work best with Amazon brands that have strong products but weak or outdated product presentation. Common issues I help solve:</p>
+      <div class="improve-grid">
+        <div class="improve-item"><div class="improve-dot"></div>Listing images look basic, outdated, or inconsistent</div>
+        <div class="improve-item"><div class="improve-dot"></div>Product benefits are not explained clearly in the gallery</div>
+        <div class="improve-item"><div class="improve-dot"></div>Image gallery does not answer key shopper objections</div>
+        <div class="improve-item"><div class="improve-dot"></div>A+ content feels generic or underdeveloped</div>
+        <div class="improve-item"><div class="improve-dot"></div>Storefront does not guide shoppers properly through the catalog</div>
+        <div class="improve-item"><div class="improve-dot"></div>Brand Story does not build enough trust or credibility</div>
+        <div class="improve-item"><div class="improve-dot"></div>Product visuals do not feel premium enough for the price point</div>
+        <div class="improve-item"><div class="improve-dot"></div>Content does not support launches, campaigns, or ad traffic</div>
+        <div class="improve-item"><div class="improve-dot"></div>Image copy is too long, unclear, or hard to read on mobile</div>
+        <div class="improve-item"><div class="improve-dot"></div>Branding is inconsistent across listings, A+, and Storefront pages</div>
+      </div>
+    </div>
+  </section>
 
   <!-- CREDIBILITY SECTION -->
   <section class="section" id="proof">
@@ -1155,9 +1579,9 @@ img {
   <!-- CASE STUDIES SECTION -->
   <section class="section" id="work">
     <div class="container">
-      <div class="kicker">Selected Amazon Work</div>
+      <div class="kicker">Selected Amazon Content Work</div>
       <h2 class="section-title">Marketplace systems, not isolated graphics.</h2>
-      <p class="section-lede">The strongest work here focuses on conversion hierarchy, catalog consistency, mobile-first education, storefront flow, and customer communication across large Amazon ecosystems.</p>
+      <p class="section-lede">A selection of Amazon listing images, Premium A+ content, Brand Story, Storefront, and marketplace content projects created for brands across wellness, beauty, home, crafts, lifestyle, baby, pet, and eCommerce categories.</p>
 
       <!-- ESSENCE RING -->
       <article class="case-card">
@@ -1719,6 +2143,204 @@ img {
     </div>
   </section>
 
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="kicker">Client Feedback &amp; Project Impact</div>
+      <h2 class="section-title">Feedback from Amazon brands and eCommerce companies.</h2>
+      <p class="section-lede">Selected feedback and project impact summaries from Amazon brands and eCommerce companies I supported through listing visuals, Premium A+ content, Brand Story, Storefronts, and marketplace content improvements.</p>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">Essence Ring</div>
+          <div class="testimonial-contact">Tami D., Co-Founder</div>
+          <span class="testimonial-label">Feedback Summary</span>
+          <p class="testimonial-text">The updated Amazon content gave Essence Ring a stronger, more polished brand presence across the catalog, helping support continued sales momentum after a major traffic period.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">Calzuro</div>
+          <div class="testimonial-contact">Brooke H., Marketing Manager</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela's work aligned closely with our brand and gave our Amazon content a cleaner, stronger, and more professional presentation."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">Homebody Accents</div>
+          <div class="testimonial-contact">James B.</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela helped make our Amazon content clearer and more informative, especially around product details, sizing, and customer-facing presentation."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">Herbalogic</div>
+          <div class="testimonial-contact">David J., Co-Founder</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela brought a thoughtful Amazon content perspective to the brand, improving how our products were presented with clearer visuals and stronger shopper-focused messaging."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">Panera Coffee / Distant Lands Coffee</div>
+          <div class="testimonial-contact">Kuanny Y., VP of Marketing</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"The storefront and Amazon content looked more polished, organized, and elevated compared with what we had before."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">The Crafter's Workshop</div>
+          <div class="testimonial-contact">Jaime E., Founder and CEO</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela upgraded our Amazon content and made the brand feel more elevated, even when working with limited image assets."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">ieró Beauty</div>
+          <div class="testimonial-contact">Nick G., Founder — Former VP MAC Cosmetics (25 Years)</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela helped bring a more premium, polished beauty presentation to our Amazon content while keeping the visuals aligned with the brand."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">Hormone Synergy</div>
+          <div class="testimonial-contact">Daniel S., Owner and Operator</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela improved the product presentation with clearer, more professional Amazon visuals that better communicated the brand and product value."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-company">LickMitt</div>
+          <div class="testimonial-contact">Jane D., Founder and CEO</div>
+          <span class="testimonial-label direct">Client Feedback</span>
+          <p class="testimonial-text">"Shiela helped refresh the Amazon content with stronger visuals, clearer product education, and a more polished brand presentation."</p>
+        </div>
+
+      </div>
+      <p class="testimonial-note">Feedback summaries are based on client response themes, project outcomes, and brand content improvements from past Amazon and eCommerce projects. Direct quotes used with client knowledge and consent.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="kicker">Amazon Content Services</div>
+      <h2 class="section-title">Services for Amazon brands and marketplace agencies.</h2>
+      <p class="section-lede">I help Amazon brands improve weak or outdated content through clearer image flow, stronger visual hierarchy, better shopper education, and more premium brand presentation.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Amazon Listing Image Audit</h3>
+          <p>Identifies weak image flow, missing selling points, unclear benefits, mobile readability issues, and buyer objections.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Image Gallery Redesign</h3>
+          <p>Improves product explanation, benefit hierarchy, visual structure, lifestyle direction, and conversion flow.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Premium A+ Content</h3>
+          <p>Builds stronger product education, brand trust, comparison clarity, and elevated storytelling.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Brand Story Content</h3>
+          <p>Strengthens brand credibility, cross-catalog consistency, and customer trust.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <h3>Amazon Storefront Refresh</h3>
+          <p>Improves navigation, category structure, product grouping, brand presentation, and seasonal merchandising.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <h3>Amazon Creative Direction</h3>
+          <p>Helps brands decide what content to improve, prioritize, restructure, or create next.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">07</div>
+          <h3>Copy + Messaging Direction</h3>
+          <p>Creates clearer headlines, benefit copy, A+ messaging, image text, and shopper-facing product language.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">08</div>
+          <h3>Ongoing Amazon Creative Support</h3>
+          <p>Supports brands or agencies with recurring content updates, catalog refreshes, and campaign assets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WORK WITH ME -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="kicker">Why Work With Me</div>
+      <h2 class="section-title">Design, strategy, copy, and creative operations — in one person.</h2>
+      <div class="why-grid">
+        <div class="why-callout">
+          <h3>Content Director-level thinking applied to hands-on Amazon execution.</h3>
+          <p>Most Amazon designers focus only on execution. My background sits at the intersection of design, marketplace content strategy, copy direction, and creative operations. I can support both hands-on production and higher-level content direction.</p>
+          <div class="why-closing">I bring Content Director-level thinking to hands-on Amazon content execution.</div>
+        </div>
+        <div class="capabilities-list">
+          <div class="cap-item"><div class="cap-dot"></div>Amazon listing image design</div>
+          <div class="cap-item"><div class="cap-dot"></div>Premium A+ content design and structure</div>
+          <div class="cap-item"><div class="cap-dot"></div>Brand Story planning</div>
+          <div class="cap-item"><div class="cap-dot"></div>Amazon Storefront merchandising</div>
+          <div class="cap-item"><div class="cap-dot"></div>Product content strategy</div>
+          <div class="cap-item"><div class="cap-dot"></div>Image gallery flow</div>
+          <div class="cap-item"><div class="cap-dot"></div>Amazon-safe shopper-facing copy</div>
+          <div class="cap-item"><div class="cap-dot"></div>SEO-aware messaging</div>
+          <div class="cap-item"><div class="cap-dot"></div>Visual hierarchy</div>
+          <div class="cap-item"><div class="cap-dot"></div>Brand consistency</div>
+          <div class="cap-item"><div class="cap-dot"></div>Buyer objection handling</div>
+          <div class="cap-item"><div class="cap-dot"></div>PPC creative alignment</div>
+          <div class="cap-item"><div class="cap-dot"></div>Catalog content systems</div>
+          <div class="cap-item"><div class="cap-dot"></div>Creative review and feedback</div>
+          <div class="cap-item"><div class="cap-dot"></div>Team and client coordination</div>
+          <div class="cap-item"><div class="cap-dot"></div>AI-assisted workflow optimization</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="resume-section" id="resume">
+    <div class="container">
+      <div class="kicker">Resume</div>
+      <h2 class="section-title">9+ years of Amazon marketplace experience.</h2>
+      <p class="section-lede">For agencies, recruiters, and hiring teams, my resume provides a more detailed view of my Amazon marketplace experience, creative leadership background, agency experience, and cross-functional content work. I'm available for remote roles, contract support, and long-term Amazon creative partnerships.</p>
+      <div class="resume-grid">
+        <div class="resume-snapshot">
+          <h3>Resume Snapshot</h3>
+          <div class="resume-fact"><strong>9+ years</strong>Amazon marketplace content experience across Seller Central and Vendor Central</div>
+          <div class="resume-fact"><strong>200+ brands</strong>Supported across Amazon categories — agencies, distributors, and private-label brands</div>
+          <div class="resume-fact"><strong>Specialties</strong>Listing images, Premium A+ content, Brand Story, Storefronts, visual content systems, and creative direction</div>
+          <div class="resume-fact"><strong>Workflows</strong>Agency environments, private-label brands, PPC coordination, SEO-aware messaging, and copy direction</div>
+        </div>
+        <div>
+          <p style="font-size:15px;font-weight:700;margin-bottom:16px;letter-spacing:-0.02em;">Best-Fit Roles</p>
+          <div class="best-fit-list">
+            <span class="fit-tag">Senior Amazon Graphic Designer</span>
+            <span class="fit-tag">Amazon Content Designer</span>
+            <span class="fit-tag">Marketplace Visual Content Specialist</span>
+            <span class="fit-tag">eCommerce Graphic Designer</span>
+            <span class="fit-tag">Amazon A+ Content Designer</span>
+            <span class="fit-tag">Amazon Storefront Designer</span>
+            <span class="fit-tag">Creative Content Manager</span>
+            <span class="fit-tag">Amazon Creative Strategist</span>
+            <span class="fit-tag">Visual Content Lead</span>
+          </div>
+          <div class="btn-row" style="margin-top:28px;">
+            <a class="btn btn-dark" href="Shiela_Mae_Rivera_2026_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+            <a class="btn btn-outline" href="Shiela_Mae_Rivera_2026_Resume.pdf" download>Download Resume PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- STRATEGY SECTION -->
   <section class="section" id="strategy">
     <div class="container">
@@ -1832,11 +2454,12 @@ img {
     <div class="contact-grid">
       <div>
         <div class="kicker">Contact</div>
-        <h2 class="contact-title">Ready to build Amazon content that reads clearly, scales cleanly, and supports growth.</h2>
-        <p class="contact-text">Available for senior remote roles, contract partnerships, Amazon agency support, and project-based Amazon content systems across Premium A+, image galleries, storefronts, Brand Story, SEO-aligned messaging, and multi-ASIN catalogs.</p>
+        <h2 class="contact-title">Need stronger Amazon content?</h2>
+        <p class="contact-text">For brands: send me your Amazon listing link and I'll review the main content opportunities. For agencies: contact me for remote Amazon content design, A+ content, Storefront, or marketplace creative support.</p>
+        <p style="color:rgba(255,253,248,.52);font-size:13px;line-height:1.7;margin-bottom:26px;">Available for: remote Amazon content roles &nbsp;·&nbsp; contract design support &nbsp;·&nbsp; listing image audits &nbsp;·&nbsp; Premium A+ projects &nbsp;·&nbsp; Brand Story &nbsp;·&nbsp; Storefront refreshes &nbsp;·&nbsp; ongoing creative support</p>
         <div class="btn-row">
           <a class="btn btn-dark" style="background:#fffdf8;color:#24211d;border-color:#fffdf8;" href="mailto:shieladesigns@gmail.com">Email Me</a>
-          <a class="btn btn-outline" style="color:#fffdf8;border-color:rgba(255,253,248,.35);" href="https://linkedin.com/in/shieladesigns" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-outline" style="color:#fffdf8;border-color:rgba(255,253,248,.35);" href="#work">View Portfolio Work</a>
         </div>
       </div>
 
@@ -1853,7 +2476,7 @@ img {
 <footer class="footer">
   <div class="container footer-inner">
     <span>© 2026 Shiela Mae Rivera</span>
-    <span>Amazon Growth Creative Strategist · Marketplace Content Lead · Conversion-Focused Creative Operations</span>
+    <span>Senior Amazon Content Designer · Marketplace Creative Strategist · Conversion-Focused Creative Operations</span>
   </div>
 </footer>
 
